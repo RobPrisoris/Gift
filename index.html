@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>I Love You</title>
+</head>
+<body>
+    <div class="greetings">
+        <span>L</span>
+        <span>O</span>
+        <span>V</span>
+        <span>E</span>
+    </div>
+    <div class="description">
+        <span>I will Always Choose You<3</span>
+    </div>
+    <div class="button">
+        <button>
+            <a href="card.html" target="_blank">Click me</a>
+            <audio id="audioPlayer" autoplay loop>
+                <source src="Bg.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </button>
+    </div>
+    <script>
+        const playButton = document.querySelector('button a');
+const audioPlayer = document.getElementById('audioPlayer');
+
+playButton.addEventListener('click', () => {
+    audioPlayer.play();
+    playButton.style.display = 'none'; // Hide the button after playing
+});
+    </script>
+</body>
+</html>
